@@ -1,0 +1,22 @@
+{
+  "collection_started_at": "2026-08-20T23:20:10-03:00",
+  "operating_system": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.14.3",
+  "lighthouse": "13.4.1",
+  "chrome": "Google Chrome 151.0.7922.172",
+  "node": "v24.19.0",
+  "timezone": "-03",
+  "profiles": [
+    "mobile",
+    "desktop"
+  ],
+  "repetitions": 5,
+  "categories": [
+    "performance",
+    "accessibility",
+    "best-practices",
+    "seo",
+    "agentic-browsing"
+  ]
+}

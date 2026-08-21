@@ -1,0 +1,169 @@
+veiculo,tipo_pagina,perfil,auditoria,n_total,n_aplicavel,n_nao_aplicavel,n_aprovado,n_reprovado,mediana_score,q1_score,q3_score
+A Casa do Cogumelo,inicial,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,inicial,desktop,cumulative-layout-shift,5,5,0,0,0,0.97,0.97,0.98
+A Casa do Cogumelo,inicial,desktop,llms-txt,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+A Casa do Cogumelo,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+A Casa do Cogumelo,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+A Casa do Cogumelo,inicial,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,inicial,mobile,cumulative-layout-shift,5,5,0,0,0,0.19,0.19,0.19
+A Casa do Cogumelo,inicial,mobile,llms-txt,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+A Casa do Cogumelo,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+A Casa do Cogumelo,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,interna,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+A Casa do Cogumelo,interna,desktop,llms-txt,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,interna,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+A Casa do Cogumelo,interna,mobile,llms-txt,5,5,0,0,5,0.0,0.0,0.0
+A Casa do Cogumelo,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+A Casa do Cogumelo,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Coelho News,inicial,desktop,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Coelho News,inicial,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Coelho News,inicial,desktop,llms-txt,5,0,5,0,0,,,
+Coelho News,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Coelho News,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Coelho News,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Coelho News,inicial,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Coelho News,inicial,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Coelho News,inicial,mobile,llms-txt,5,0,5,0,0,,,
+Coelho News,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Coelho News,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Coelho News,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Coelho News,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Coelho News,interna,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Coelho News,interna,desktop,llms-txt,5,0,5,0,0,,,
+Coelho News,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Coelho News,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Coelho News,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Coelho News,interna,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Coelho News,interna,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Coelho News,interna,mobile,llms-txt,5,0,5,0,0,,,
+Coelho News,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Coelho News,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Coelho News,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendista News,inicial,desktop,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,desktop,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendista News,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendista News,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendista News,inicial,mobile,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,mobile,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendista News,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendista News,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendista News,interna,desktop,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,desktop,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendista News,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendista News,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendista News,interna,mobile,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,mobile,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Nintendista News,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendista News,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendista News,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Blast,inicial,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Nintendo Blast,inicial,desktop,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Blast,inicial,desktop,llms-txt,5,0,5,0,0,,,
+Nintendo Blast,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Blast,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Blast,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Blast,inicial,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Nintendo Blast,inicial,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Blast,inicial,mobile,llms-txt,5,0,5,0,0,,,
+Nintendo Blast,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Blast,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Blast,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Blast,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Nintendo Blast,interna,desktop,cumulative-layout-shift,5,5,0,3,0,1.0,0.99,1.0
+Nintendo Blast,interna,desktop,llms-txt,5,0,5,0,0,,,
+Nintendo Blast,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Blast,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Blast,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Blast,interna,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Nintendo Blast,interna,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Blast,interna,mobile,llms-txt,5,0,5,0,0,,,
+Nintendo Blast,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Blast,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Blast,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Boy,inicial,desktop,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Boy,inicial,desktop,cumulative-layout-shift,5,5,0,0,0,0.6,0.6,0.6
+Nintendo Boy,inicial,desktop,llms-txt,5,0,5,0,0,,,
+Nintendo Boy,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Boy,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Boy,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Boy,inicial,mobile,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Boy,inicial,mobile,cumulative-layout-shift,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Boy,inicial,mobile,llms-txt,5,0,5,0,0,,,
+Nintendo Boy,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Boy,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Boy,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Boy,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Nintendo Boy,interna,desktop,cumulative-layout-shift,5,5,0,0,0,0.61,0.61,0.61
+Nintendo Boy,interna,desktop,llms-txt,5,0,5,0,0,,,
+Nintendo Boy,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Boy,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Boy,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Nintendo Boy,interna,mobile,agent-accessibility-tree,5,5,0,5,0,1.0,1.0,1.0
+Nintendo Boy,interna,mobile,cumulative-layout-shift,5,5,0,4,0,1.0,1.0,1.0
+Nintendo Boy,interna,mobile,llms-txt,5,0,5,0,0,,,
+Nintendo Boy,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Nintendo Boy,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Nintendo Boy,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Project N,inicial,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Project N,inicial,desktop,cumulative-layout-shift,5,5,0,0,0,0.17,0.16,0.17
+Project N,inicial,desktop,llms-txt,5,0,5,0,0,,,
+Project N,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Project N,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Project N,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Project N,inicial,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Project N,inicial,mobile,cumulative-layout-shift,5,5,0,0,0,0.03,0.03,0.03
+Project N,inicial,mobile,llms-txt,5,0,5,0,0,,,
+Project N,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Project N,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Project N,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Project N,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Project N,interna,desktop,cumulative-layout-shift,5,5,0,0,0,0.72,0.62,0.95
+Project N,interna,desktop,llms-txt,5,0,5,0,0,,,
+Project N,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Project N,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Project N,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Project N,interna,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Project N,interna,mobile,cumulative-layout-shift,5,5,0,0,0,0.94,0.94,0.94
+Project N,interna,mobile,llms-txt,5,0,5,0,0,,,
+Project N,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Project N,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Project N,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Universo Nintendo,inicial,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Universo Nintendo,inicial,desktop,cumulative-layout-shift,5,5,0,0,0,0.41,0.41,0.67
+Universo Nintendo,inicial,desktop,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Universo Nintendo,inicial,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Universo Nintendo,inicial,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Universo Nintendo,inicial,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Universo Nintendo,inicial,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Universo Nintendo,inicial,mobile,cumulative-layout-shift,5,5,0,0,0,0.6,0.6,0.6
+Universo Nintendo,inicial,mobile,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Universo Nintendo,inicial,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Universo Nintendo,inicial,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Universo Nintendo,inicial,mobile,webmcp-schema-validity,5,0,5,0,0,,,
+Universo Nintendo,interna,desktop,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Universo Nintendo,interna,desktop,cumulative-layout-shift,5,5,0,0,0,0.39,0.39,0.39
+Universo Nintendo,interna,desktop,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Universo Nintendo,interna,desktop,webmcp-form-coverage,5,0,5,0,0,,,
+Universo Nintendo,interna,desktop,webmcp-registered-tools,5,0,5,0,0,,,
+Universo Nintendo,interna,desktop,webmcp-schema-validity,5,0,5,0,0,,,
+Universo Nintendo,interna,mobile,agent-accessibility-tree,5,5,0,0,5,0.0,0.0,0.0
+Universo Nintendo,interna,mobile,cumulative-layout-shift,5,5,0,0,0,0.27,0.27,0.27
+Universo Nintendo,interna,mobile,llms-txt,5,5,0,5,0,1.0,1.0,1.0
+Universo Nintendo,interna,mobile,webmcp-form-coverage,5,0,5,0,0,,,
+Universo Nintendo,interna,mobile,webmcp-registered-tools,5,0,5,0,0,,,
+Universo Nintendo,interna,mobile,webmcp-schema-validity,5,0,5,0,0,,,

@@ -1,0 +1,253 @@
+tipo_pagina,perfil,metrica,veiculo,mediana_veiculo,mediana_concorrentes,diferenca
+inicial,desktop,accessibility,A Casa do Cogumelo,69.0,85.5,-16.5
+inicial,desktop,accessibility,Coelho News,93.0,85.5,7.5
+inicial,desktop,accessibility,Nintendista News,100.0,85.5,14.5
+inicial,desktop,accessibility,Nintendo Blast,76.0,85.5,-9.5
+inicial,desktop,accessibility,Nintendo Boy,96.0,85.5,10.5
+inicial,desktop,accessibility,Project N,80.0,85.5,-5.5
+inicial,desktop,accessibility,Universo Nintendo,91.0,85.5,5.5
+inicial,desktop,best_practices,A Casa do Cogumelo,57.99999999999999,65.5,-7.500000000000007
+inicial,desktop,best_practices,Coelho News,73.0,65.5,7.5
+inicial,desktop,best_practices,Nintendista News,100.0,65.5,34.5
+inicial,desktop,best_practices,Nintendo Blast,77.0,65.5,11.5
+inicial,desktop,best_practices,Nintendo Boy,73.0,65.5,7.5
+inicial,desktop,best_practices,Project N,57.99999999999999,65.5,-7.500000000000007
+inicial,desktop,best_practices,Universo Nintendo,54.0,65.5,-11.5
+inicial,desktop,cls,A Casa do Cogumelo,0.06315256769307012,0.13488654120510524,-0.07173397351203512
+inicial,desktop,cls,Coelho News,0.0,0.13488654120510524,-0.13488654120510524
+inicial,desktop,cls,Nintendista News,0.0,0.13488654120510524,-0.13488654120510524
+inicial,desktop,cls,Nintendo Blast,0.0334851591499151,0.13488654120510524,-0.10140138205519014
+inicial,desktop,cls,Nintendo Boy,0.20662051471714032,0.13488654120510524,0.07173397351203509
+inicial,desktop,cls,Project N,0.48726250597657184,0.13488654120510524,0.3523759647714666
+inicial,desktop,cls,Universo Nintendo,0.2896086888833973,0.13488654120510524,0.15472214767829207
+inicial,desktop,fcp_ms,A Casa do Cogumelo,2212.7980000000002,1549.3315000000002,663.4665
+inicial,desktop,fcp_ms,Coelho News,518.724,1549.3315000000002,-1030.6075
+inicial,desktop,fcp_ms,Nintendista News,937.9920000000002,1549.3315000000002,-611.3395
+inicial,desktop,fcp_ms,Nintendo Blast,921.3610000000001,1549.3315000000002,-627.9705000000001
+inicial,desktop,fcp_ms,Nintendo Boy,625.9961999999999,1549.3315000000002,-923.3353000000003
+inicial,desktop,fcp_ms,Project N,3498.7339999999986,1549.3315000000002,1949.4024999999983
+inicial,desktop,fcp_ms,Universo Nintendo,2177.3020000000006,1549.3315000000002,627.9705000000004
+inicial,desktop,lcp_ms,A Casa do Cogumelo,5354.4090000000015,4541.056750000002,813.3522499999999
+inicial,desktop,lcp_ms,Coelho News,1173.922,4541.056750000002,-3367.1347500000015
+inicial,desktop,lcp_ms,Nintendista News,1508.5320000000002,4541.056750000002,-3032.5247500000014
+inicial,desktop,lcp_ms,Nintendo Blast,3334.5085,4541.056750000002,-1206.5482500000016
+inicial,desktop,lcp_ms,Nintendo Boy,4245.583500000001,4541.056750000002,-295.4732500000009
+inicial,desktop,lcp_ms,Project N,5809.4765000000025,4541.056750000002,1268.419750000001
+inicial,desktop,lcp_ms,Universo Nintendo,4836.5300000000025,4541.056750000002,295.4732500000009
+inicial,desktop,performance,A Casa do Cogumelo,57.99999999999999,58.5,-0.5000000000000071
+inicial,desktop,performance,Coelho News,95.0,58.5,36.5
+inicial,desktop,performance,Nintendista News,94.0,58.5,35.5
+inicial,desktop,performance,Nintendo Blast,78.0,58.5,19.5
+inicial,desktop,performance,Nintendo Boy,59.0,58.5,0.5
+inicial,desktop,performance,Project N,35.0,58.5,-23.5
+inicial,desktop,performance,Universo Nintendo,44.0,58.5,-14.5
+inicial,desktop,seo,A Casa do Cogumelo,77.0,92.0,-15.0
+inicial,desktop,seo,Coelho News,100.0,92.0,8.0
+inicial,desktop,seo,Nintendista News,100.0,92.0,8.0
+inicial,desktop,seo,Nintendo Blast,92.0,92.0,0.0
+inicial,desktop,seo,Nintendo Boy,92.0,92.0,0.0
+inicial,desktop,seo,Project N,92.0,92.0,0.0
+inicial,desktop,seo,Universo Nintendo,100.0,92.0,8.0
+inicial,desktop,speed_index_ms,A Casa do Cogumelo,5575.734711904144,4619.1485795754525,956.5861323286917
+inicial,desktop,speed_index_ms,Coelho News,1763.3338370965066,4619.1485795754525,-2855.814742478946
+inicial,desktop,speed_index_ms,Nintendista News,937.9920000000002,4619.1485795754525,-3681.1565795754523
+inicial,desktop,speed_index_ms,Nintendo Blast,1735.006169026819,4619.1485795754525,-2884.1424105486335
+inicial,desktop,speed_index_ms,Nintendo Boy,4873.838409150903,4619.1485795754525,254.68982957545086
+inicial,desktop,speed_index_ms,Project N,4364.458750000002,4619.1485795754525,-254.68982957545086
+inicial,desktop,speed_index_ms,Universo Nintendo,6101.508798618709,4619.1485795754525,1482.3602190432566
+inicial,desktop,tbt_ms,A Casa do Cogumelo,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Coelho News,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Nintendista News,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Nintendo Blast,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Nintendo Boy,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Project N,0.0,0.0,0.0
+inicial,desktop,tbt_ms,Universo Nintendo,151.99999999999955,0.0,151.99999999999955
+inicial,mobile,accessibility,A Casa do Cogumelo,69.0,84.0,-15.0
+inicial,mobile,accessibility,Coelho News,88.0,84.0,4.0
+inicial,mobile,accessibility,Nintendista News,100.0,84.0,16.0
+inicial,mobile,accessibility,Nintendo Blast,84.0,84.0,0.0
+inicial,mobile,accessibility,Nintendo Boy,100.0,84.0,16.0
+inicial,mobile,accessibility,Project N,84.0,84.0,0.0
+inicial,mobile,accessibility,Universo Nintendo,84.0,84.0,0.0
+inicial,mobile,best_practices,A Casa do Cogumelo,57.99999999999999,57.99999999999999,0.0
+inicial,mobile,best_practices,Coelho News,73.0,57.99999999999999,15.000000000000007
+inicial,mobile,best_practices,Nintendista News,100.0,57.99999999999999,42.00000000000001
+inicial,mobile,best_practices,Nintendo Blast,77.0,57.99999999999999,19.000000000000007
+inicial,mobile,best_practices,Nintendo Boy,54.0,57.99999999999999,-3.999999999999993
+inicial,mobile,best_practices,Project N,57.99999999999999,57.99999999999999,0.0
+inicial,mobile,best_practices,Universo Nintendo,50.0,57.99999999999999,-7.999999999999993
+inicial,mobile,cls,A Casa do Cogumelo,0.4618315657846618,0.10631606484218915,0.35551550094247264
+inicial,mobile,cls,Coelho News,0.0,0.10631606484218915,-0.10631606484218915
+inicial,mobile,cls,Nintendista News,0.0,0.10631606484218915,-0.10631606484218915
+inicial,mobile,cls,Nintendo Blast,0.00469048276391532,0.10631606484218915,-0.10162558207827384
+inicial,mobile,cls,Nintendo Boy,0.0,0.10631606484218915,-0.10631606484218915
+inicial,mobile,cls,Project N,0.917732378126693,0.10631606484218915,0.8114163132845038
+inicial,mobile,cls,Universo Nintendo,0.207941646920463,0.10631606484218915,0.10162558207827384
+inicial,mobile,fcp_ms,A Casa do Cogumelo,10919.419999999998,7455.072540000001,3464.347459999997
+inicial,mobile,fcp_ms,Coelho News,7193.897000000001,7455.072540000001,-261.1755400000002
+inicial,mobile,fcp_ms,Nintendista News,1922.2330000000002,7455.072540000001,-5532.839540000001
+inicial,mobile,fcp_ms,Nintendo Blast,2621.587,7455.072540000001,-4833.4855400000015
+inicial,mobile,fcp_ms,Nintendo Boy,7716.24808,7455.072540000001,261.1755399999993
+inicial,mobile,fcp_ms,Project N,8362.130999999998,7455.072540000001,907.0584599999966
+inicial,mobile,fcp_ms,Universo Nintendo,5112.772000000001,7455.072540000001,-2342.30054
+inicial,mobile,lcp_ms,A Casa do Cogumelo,24231.345650000007,20713.36481525756,3517.9808347424478
+inicial,mobile,lcp_ms,Coelho News,38997.07650000004,20713.36481525756,18283.71168474248
+inicial,mobile,lcp_ms,Nintendista News,2370.3650000000002,20713.36481525756,-18342.999815257557
+inicial,mobile,lcp_ms,Nintendo Blast,9957.8315,20713.36481525756,-10755.533315257559
+inicial,mobile,lcp_ms,Nintendo Boy,21997.432039999992,20713.36481525756,1284.0672247424336
+inicial,mobile,lcp_ms,Project N,19429.297590515125,20713.36481525756,-1284.0672247424336
+inicial,mobile,lcp_ms,Universo Nintendo,14684.680999999997,20713.36481525756,-6028.683815257562
+inicial,mobile,performance,A Casa do Cogumelo,34.0,44.5,-10.5
+inicial,mobile,performance,Coelho News,55.00000000000001,44.5,10.500000000000007
+inicial,mobile,performance,Nintendista News,95.0,44.5,50.5
+inicial,mobile,performance,Nintendo Blast,68.0,44.5,23.5
+inicial,mobile,performance,Nintendo Boy,55.00000000000001,44.5,10.500000000000007
+inicial,mobile,performance,Project N,32.0,44.5,-12.5
+inicial,mobile,performance,Universo Nintendo,20.0,44.5,-24.5
+inicial,mobile,seo,A Casa do Cogumelo,77.0,92.0,-15.0
+inicial,mobile,seo,Coelho News,100.0,92.0,8.0
+inicial,mobile,seo,Nintendista News,100.0,92.0,8.0
+inicial,mobile,seo,Nintendo Blast,92.0,92.0,0.0
+inicial,mobile,seo,Nintendo Boy,92.0,92.0,0.0
+inicial,mobile,seo,Project N,92.0,92.0,0.0
+inicial,mobile,seo,Universo Nintendo,100.0,92.0,8.0
+inicial,mobile,speed_index_ms,A Casa do Cogumelo,16987.474464611503,12240.026809541543,4747.44765506996
+inicial,mobile,speed_index_ms,Coelho News,8198.458061655023,12240.026809541543,-4041.56874788652
+inicial,mobile,speed_index_ms,Nintendista News,4064.215110264817,12240.026809541543,-8175.811699276726
+inicial,mobile,speed_index_ms,Nintendo Blast,4965.901246738843,12240.026809541543,-7274.1255628027
+inicial,mobile,speed_index_ms,Nintendo Boy,15695.501619083083,12240.026809541543,3455.47480954154
+inicial,mobile,speed_index_ms,Project N,8784.552000000003,12240.026809541543,-3455.47480954154
+inicial,mobile,speed_index_ms,Universo Nintendo,21422.935490696178,12240.026809541543,9182.908681154635
+inicial,mobile,tbt_ms,A Casa do Cogumelo,123.0,105.25,17.75
+inicial,mobile,tbt_ms,Coelho News,230.0,105.25,124.75
+inicial,mobile,tbt_ms,Nintendista News,0.0,105.25,-105.25
+inicial,mobile,tbt_ms,Nintendo Blast,87.5,105.25,-17.75
+inicial,mobile,tbt_ms,Nintendo Boy,15.0,105.25,-90.25
+inicial,mobile,tbt_ms,Project N,32.5,105.25,-72.75
+inicial,mobile,tbt_ms,Universo Nintendo,1532.9999999999964,105.25,1427.7499999999964
+interna,desktop,accessibility,A Casa do Cogumelo,78.0,89.0,-11.0
+interna,desktop,accessibility,Coelho News,90.0,89.0,1.0
+interna,desktop,accessibility,Nintendista News,100.0,89.0,11.0
+interna,desktop,accessibility,Nintendo Blast,71.0,89.0,-18.0
+interna,desktop,accessibility,Nintendo Boy,90.0,89.0,1.0
+interna,desktop,accessibility,Project N,88.0,89.0,-1.0
+interna,desktop,accessibility,Universo Nintendo,95.0,89.0,6.0
+interna,desktop,best_practices,A Casa do Cogumelo,57.99999999999999,63.5,-5.500000000000007
+interna,desktop,best_practices,Coelho News,69.0,63.5,5.5
+interna,desktop,best_practices,Nintendista News,100.0,63.5,36.5
+interna,desktop,best_practices,Nintendo Blast,77.0,63.5,13.5
+interna,desktop,best_practices,Nintendo Boy,73.0,63.5,9.5
+interna,desktop,best_practices,Project N,57.99999999999999,63.5,-5.500000000000007
+interna,desktop,best_practices,Universo Nintendo,54.0,63.5,-9.5
+interna,desktop,cls,A Casa do Cogumelo,0.001465802537200243,0.10032005779852343,-0.09885425526132319
+interna,desktop,cls,Coelho News,0.0,0.10032005779852343,-0.10032005779852343
+interna,desktop,cls,Nintendista News,0.0,0.10032005779852343,-0.10032005779852343
+interna,desktop,cls,Nintendo Blast,0.038573610454508966,0.10032005779852343,-0.061746447344014466
+interna,desktop,cls,Nintendo Boy,0.20225564882104102,0.10032005779852343,0.10193559102251759
+interna,desktop,cls,Project N,0.1620665051425379,0.10032005779852343,0.061746447344014466
+interna,desktop,cls,Universo Nintendo,0.3031485186495903,0.10032005779852343,0.20282846085106687
+interna,desktop,fcp_ms,A Casa do Cogumelo,1845.736,1409.5345000000002,436.2014999999999
+interna,desktop,fcp_ms,Coelho News,342.93850000000003,1409.5345000000002,-1066.5960000000002
+interna,desktop,fcp_ms,Nintendista News,864.681,1409.5345000000002,-544.8535000000002
+interna,desktop,fcp_ms,Nintendo Blast,973.3330000000001,1409.5345000000002,-436.2015000000001
+interna,desktop,fcp_ms,Nintendo Boy,614.372,1409.5345000000002,-795.1625000000003
+interna,desktop,fcp_ms,Project N,4683.402,1409.5345000000002,3273.8675
+interna,desktop,fcp_ms,Universo Nintendo,2427.0370000000003,1409.5345000000002,1017.5025
+interna,desktop,lcp_ms,A Casa do Cogumelo,5042.682999999999,4198.0777499999995,844.6052499999996
+interna,desktop,lcp_ms,Coelho News,776.9395000000001,4198.0777499999995,-3421.1382499999995
+interna,desktop,lcp_ms,Nintendista News,864.681,4198.0777499999995,-3333.3967499999994
+interna,desktop,lcp_ms,Nintendo Blast,3353.4725,4198.0777499999995,-844.6052499999996
+interna,desktop,lcp_ms,Nintendo Boy,912.9719999999998,4198.0777499999995,-3285.1057499999997
+interna,desktop,lcp_ms,Project N,8456.53,4198.0777499999995,4258.452250000001
+interna,desktop,lcp_ms,Universo Nintendo,5677.602000000001,4198.0777499999995,1479.5242500000013
+interna,desktop,performance,A Casa do Cogumelo,60.0,68.0,-8.0
+interna,desktop,performance,Coelho News,94.0,68.0,26.0
+interna,desktop,performance,Nintendista News,98.0,68.0,30.0
+interna,desktop,performance,Nintendo Blast,76.0,68.0,8.0
+interna,desktop,performance,Nintendo Boy,80.0,68.0,12.0
+interna,desktop,performance,Project N,47.0,68.0,-21.0
+interna,desktop,performance,Universo Nintendo,40.0,68.0,-28.0
+interna,desktop,seo,A Casa do Cogumelo,77.0,85.0,-8.0
+interna,desktop,seo,Coelho News,100.0,85.0,15.0
+interna,desktop,seo,Nintendista News,100.0,85.0,15.0
+interna,desktop,seo,Nintendo Blast,85.0,85.0,0.0
+interna,desktop,seo,Nintendo Boy,85.0,85.0,0.0
+interna,desktop,seo,Project N,85.0,85.0,0.0
+interna,desktop,seo,Universo Nintendo,100.0,85.0,15.0
+interna,desktop,speed_index_ms,A Casa do Cogumelo,4879.345040612372,4445.146592646469,434.19844796590314
+interna,desktop,speed_index_ms,Coelho News,2428.710602475768,4445.146592646469,-2016.4359901707007
+interna,desktop,speed_index_ms,Nintendista News,864.681,4445.146592646469,-3580.465592646469
+interna,desktop,speed_index_ms,Nintendo Blast,1956.147492033951,4445.146592646469,-2488.999100612518
+interna,desktop,speed_index_ms,Nintendo Boy,4206.891185292938,4445.146592646469,-238.25540735353115
+interna,desktop,speed_index_ms,Project N,4683.402,4445.146592646469,238.25540735353115
+interna,desktop,speed_index_ms,Universo Nintendo,6597.79346649668,4445.146592646469,2152.646873850211
+interna,desktop,tbt_ms,A Casa do Cogumelo,0.0,0.0,0.0
+interna,desktop,tbt_ms,Coelho News,0.0,0.0,0.0
+interna,desktop,tbt_ms,Nintendista News,0.0,0.0,0.0
+interna,desktop,tbt_ms,Nintendo Blast,0.0,0.0,0.0
+interna,desktop,tbt_ms,Nintendo Boy,0.0,0.0,0.0
+interna,desktop,tbt_ms,Project N,0.0,0.0,0.0
+interna,desktop,tbt_ms,Universo Nintendo,150.99999999999955,0.0,150.99999999999955
+interna,mobile,accessibility,A Casa do Cogumelo,78.0,88.5,-10.5
+interna,mobile,accessibility,Coelho News,90.0,88.5,1.5
+interna,mobile,accessibility,Nintendista News,100.0,88.5,11.5
+interna,mobile,accessibility,Nintendo Blast,79.0,88.5,-9.5
+interna,mobile,accessibility,Nintendo Boy,100.0,88.5,11.5
+interna,mobile,accessibility,Project N,87.0,88.5,-1.5
+interna,mobile,accessibility,Universo Nintendo,92.0,88.5,3.5
+interna,mobile,best_practices,A Casa do Cogumelo,57.99999999999999,65.5,-7.500000000000007
+interna,mobile,best_practices,Coelho News,73.0,65.5,7.5
+interna,mobile,best_practices,Nintendista News,100.0,65.5,34.5
+interna,mobile,best_practices,Nintendo Blast,77.0,65.5,11.5
+interna,mobile,best_practices,Nintendo Boy,73.0,65.5,7.5
+interna,mobile,best_practices,Project N,57.99999999999999,65.5,-7.500000000000007
+interna,mobile,best_practices,Universo Nintendo,50.0,65.5,-15.5
+interna,mobile,cls,A Casa do Cogumelo,0.0018187532818264292,0.003423664379958789,-0.00160491109813236
+interna,mobile,cls,Coelho News,0.0,0.003423664379958789,-0.003423664379958789
+interna,mobile,cls,Nintendista News,0.0,0.003423664379958789,-0.003423664379958789
+interna,mobile,cls,Nintendo Blast,0.0050285754780911495,0.003423664379958789,0.0016049110981323604
+interna,mobile,cls,Nintendo Boy,0.0,0.003423664379958789,-0.003423664379958789
+interna,mobile,cls,Project N,0.07871524790113972,0.003423664379958789,0.07529158352118093
+interna,mobile,cls,Universo Nintendo,0.3816576574926044,0.003423664379958789,0.3782339931126456
+interna,mobile,fcp_ms,A Casa do Cogumelo,8231.997000000001,6945.7042,1286.292800000001
+interna,mobile,fcp_ms,Coelho News,6224.428000000001,6945.7042,-721.2761999999993
+interna,mobile,fcp_ms,Nintendista News,2072.1769999999997,6945.7042,-4873.5272
+interna,mobile,fcp_ms,Nintendo Blast,2597.424,6945.7042,-4348.2802
+interna,mobile,fcp_ms,Nintendo Boy,7666.980399999999,6945.7042,721.2761999999984
+interna,mobile,fcp_ms,Project N,9219.011499999997,6945.7042,2273.3072999999968
+interna,mobile,fcp_ms,Universo Nintendo,5256.158000000002,6945.7042,-1689.546199999998
+interna,mobile,lcp_ms,A Casa do Cogumelo,22590.062000000005,15018.7225125,7571.339487500005
+interna,mobile,lcp_ms,Coelho News,10240.162999999999,15018.7225125,-4778.559512500002
+interna,mobile,lcp_ms,Nintendista News,2545.35,15018.7225125,-12473.3725125
+interna,mobile,lcp_ms,Nintendo Blast,9161.944,15018.7225125,-5856.778512500001
+interna,mobile,lcp_ms,Nintendo Boy,11661.363525,15018.7225125,-3357.3589875
+interna,mobile,lcp_ms,Project N,22671.747,15018.7225125,7653.024487499999
+interna,mobile,lcp_ms,Universo Nintendo,18376.0815,15018.7225125,3357.3589875
+interna,mobile,performance,A Casa do Cogumelo,55.00000000000001,55.00000000000001,0.0
+interna,mobile,performance,Coelho News,56.99999999999999,55.00000000000001,1.9999999999999858
+interna,mobile,performance,Nintendista News,94.0,55.00000000000001,38.99999999999999
+interna,mobile,performance,Nintendo Blast,67.0,55.00000000000001,11.999999999999993
+interna,mobile,performance,Nintendo Boy,55.00000000000001,55.00000000000001,0.0
+interna,mobile,performance,Project N,55.00000000000001,55.00000000000001,0.0
+interna,mobile,performance,Universo Nintendo,11.0,55.00000000000001,-44.00000000000001
+interna,mobile,seo,A Casa do Cogumelo,77.0,92.0,-15.0
+interna,mobile,seo,Coelho News,100.0,92.0,8.0
+interna,mobile,seo,Nintendista News,100.0,92.0,8.0
+interna,mobile,seo,Nintendo Blast,85.0,92.0,-7.0
+interna,mobile,seo,Nintendo Boy,92.0,92.0,0.0
+interna,mobile,seo,Project N,92.0,92.0,0.0
+interna,mobile,seo,Universo Nintendo,100.0,92.0,8.0
+interna,mobile,speed_index_ms,A Casa do Cogumelo,15127.692567603024,11581.06691953662,3546.6256480664033
+interna,mobile,speed_index_ms,Coelho News,6463.207438854432,11581.06691953662,-5117.859480682188
+interna,mobile,speed_index_ms,Nintendista News,3946.4271733332134,11581.06691953662,-7634.639746203407
+interna,mobile,speed_index_ms,Nintendo Blast,5566.853308239035,11581.06691953662,-6014.213611297586
+interna,mobile,speed_index_ms,Nintendo Boy,13943.122339073245,11581.06691953662,2362.055419536624
+interna,mobile,speed_index_ms,Project N,9219.011499999997,11581.06691953662,-2362.055419536624
+interna,mobile,speed_index_ms,Universo Nintendo,24223.066226414157,11581.06691953662,12641.999306877537
+interna,mobile,tbt_ms,A Casa do Cogumelo,50.0,58.0,-8.0
+interna,mobile,tbt_ms,Coelho News,143.5,58.0,85.5
+interna,mobile,tbt_ms,Nintendista News,0.0,58.0,-58.0
+interna,mobile,tbt_ms,Nintendo Blast,66.0,58.0,8.0
+interna,mobile,tbt_ms,Nintendo Boy,14.0,58.0,-44.0
+interna,mobile,tbt_ms,Project N,43.5,58.0,-14.5
+interna,mobile,tbt_ms,Universo Nintendo,1670.0,58.0,1612.0

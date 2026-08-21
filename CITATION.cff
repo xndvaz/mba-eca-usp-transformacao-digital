@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se utilizar estes dados ou materiais, cite o conjunto conforme os metadados abaixo."
+title: "Evidências da comparação técnica Lighthouse para arquitetura de conteúdo orientada por dados"
+type: dataset
+authors:
+  - family-names: "Santos"
+    given-names: "Alexandre Martins Vaz dos"
+version: 1.0.0
+date-released: 2026-08-21
+url: "https://github.com/xndvaz/mba-eca-usp-transformacao-digital"
+repository-code: "https://github.com/xndvaz/mba-eca-usp-transformacao-digital"
+license: CC-BY-4.0
+keywords:
+  - Google Lighthouse
+  - arquitetura de conteúdo
+  - desempenho web
+  - jornalismo digital
+  - geração estática de sites
