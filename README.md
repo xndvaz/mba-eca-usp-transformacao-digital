@@ -10,10 +10,11 @@ O conjunto documenta uma comparação técnica transversal entre o Nintendista N
 - `dados/`: dados consolidados, medianas, intervalos interquartis e resultados de Agentic Browsing;
 - `integridade/`: hashes SHA-256 e conferência dos relatórios;
 - `scripts/`: consolidação, validação, tabelas e figuras;
+- `assets/fonts/`: DejaVu Sans 2.37 usado para geração visual determinística;
 - `CITATION.cff`: metadados para citação;
 - `licencas/`: termos aplicáveis ao código, aos textos e aos dados derivados.
 
-Os 140 relatórios JSON originais estão no arquivo `lighthouse-json-140-v1.0.0.tar.gz` da [release v1.0.0](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/tag/v1.0.0). O hash SHA-256 do arquivo consta em `integridade/sha256-arquivo-release.txt`. Os relatórios HTML e os demais registros internos permanecem sob guarda do autor.
+Os 140 relatórios JSON originais estão no arquivo `lighthouse-json-140-v1.0.0.tar.gz` da [release v1.0.0](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/tag/v1.0.0). O hash SHA-256 do arquivo consta em `integridade/sha256-arquivo-release.txt`, e a conferência do pacote está documentada em `integridade/registro-arquivo-release-v1.0.0.md`. Os relatórios HTML e os demais registros internos permanecem sob guarda do autor.
 
 ## Delineamento e seleção
 
@@ -39,7 +40,7 @@ python3 scripts/gerar-figura-escores.py
 python3 scripts/gerar-resumo-redacao.py
 ```
 
-A automação do repositório baixa a release, confere a quantidade de arquivos, os hashes e a regeneração dos dados consolidados. As tabelas e figuras regeneradas ficam em `figuras-geradas/`.
+A automação do repositório baixa a release, confere a quantidade de arquivos, os hashes e a regeneração dos dados consolidados. As tabelas e figuras regeneradas ficam em `figuras-geradas/`. A comparação visual exige dimensões idênticas e usa limites estritos nos gráficos. Nas tabelas, pequenas diferenças de rasterização entre versões do FreeType são admitidas somente quando uma máscara independente, sem as linhas de grade, confirma a preservação da estrutura textual.
 
 ## Integridade e privacidade
 
@@ -50,3 +51,5 @@ Nenhum código-fonte do Nintendista News, conversa, documento institucional, mon
 ## Direitos
 
 Os nomes, marcas, URLs, textos, imagens e demais recursos dos sites auditados permanecem sob os direitos de seus respectivos titulares. Sua presença nos relatórios deriva da observação automatizada de páginas públicas para fins acadêmicos e não transfere direitos ao autor deste conjunto. Consulte `DIREITOS-E-LIMITES.md` e as licenças específicas.
+
+Os arquivos DejaVu Sans 2.37 usados pelos geradores visuais são distribuídos nos termos de `assets/fonts/LICENSE-DejaVu.txt`.

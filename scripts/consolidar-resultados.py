@@ -172,7 +172,7 @@ def main() -> None:
         *METRICS.keys(), "arquivo_json", "sha256_json",
     ]
     with (out / "dados-brutos-consolidados.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=raw_columns)
+        writer = csv.DictWriter(handle, fieldnames=raw_columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -201,7 +201,7 @@ def main() -> None:
         })
     summary_columns = ["veiculo", "tipo_pagina", "perfil", "metrica", "n", "mediana", "q1", "q3", "iqr", "minimo", "maximo"]
     with (out / "resumo-medianas-iqr.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=summary_columns)
+        writer = csv.DictWriter(handle, fieldnames=summary_columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(summaries)
 
@@ -224,15 +224,31 @@ def main() -> None:
             })
     comparison_columns = ["tipo_pagina", "perfil", "metrica", "veiculo", "mediana_veiculo", "mediana_concorrentes", "diferenca"]
     with (out / "comparacao-mediana-veiculos-comparadores.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=comparison_columns)
+        writer = csv.DictWriter(handle, fieldnames=comparison_columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(comparison)
 
     with (out / "integridade-relatorios.csv").open("w", encoding="utf-8", newline="") as handle:
         columns = ["id", "perfil", "repeticao", "status_execucao", "arquivo_json", "sha256_registrado", "sha256_conferido", "integridade"]
-        writer = csv.DictWriter(handle, fieldnames=columns)
+        writer = csv.DictWriter(handle, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(integrity)
+
+    with (out / "sha256-relatorios-json.csv").open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["sha256", "arquivo"],
+            lineterminator="\n",
+        )
+        writer.writeheader()
+        writer.writerows(
+            {
+                "sha256": item["sha256_conferido"],
+                "arquivo": Path(item["arquivo_json"]).name,
+            }
+            for item in integrity
+            if item["sha256_conferido"]
+        )
 
     agentic_columns = [
         "id", "veiculo", "tipo_pagina", "perfil", "repeticao", "inicio", "url_final",
@@ -240,7 +256,7 @@ def main() -> None:
         "modo", "valor_numerico", "valor_exibido", "arquivo_json",
     ]
     with (out / "agentic-browsing-detalhado.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=agentic_columns)
+        writer = csv.DictWriter(handle, fieldnames=agentic_columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(agentic_rows)
 
@@ -265,18 +281,24 @@ def main() -> None:
             "n_total": len(items),
             "n_aplicavel": len(applicable),
             "n_nao_aplicavel": sum(1 for item in items if item["modo"] == "notApplicable"),
-            "n_aprovado": sum(1 for value in scores if value == 1),
-            "n_reprovado": sum(1 for value in scores if value == 0),
+            "n_score_1": sum(1 for value in scores if value == 1),
+            "n_score_0": sum(1 for value in scores if value == 0),
+            "n_score_fracionario": sum(1 for value in scores if 0 < value < 1),
             "mediana_score": "" if not scores else statistics.median(scores),
             "q1_score": "" if not scores else quantile(scores, 0.25),
             "q3_score": "" if not scores else quantile(scores, 0.75),
         })
     agentic_summary_columns = [
         "veiculo", "tipo_pagina", "perfil", "auditoria", "n_total", "n_aplicavel",
-        "n_nao_aplicavel", "n_aprovado", "n_reprovado", "mediana_score", "q1_score", "q3_score",
+        "n_nao_aplicavel", "n_score_1", "n_score_0", "n_score_fracionario",
+        "mediana_score", "q1_score", "q3_score",
     ]
     with (out / "agentic-browsing-resumo.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=agentic_summary_columns)
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=agentic_summary_columns,
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(agentic_summaries)
 

@@ -7,7 +7,6 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 import statistics
-import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -192,10 +191,12 @@ def write_agentic_table(agentic_rows):
 
 
 FONT_REGULAR_CANDIDATES = (
+    str(ROOT / "assets" / "fonts" / "DejaVuSans.ttf"),
     "/System/Library/Fonts/Supplemental/Arial.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
 )
 FONT_BOLD_CANDIDATES = (
+    str(ROOT / "assets" / "fonts" / "DejaVuSans-Bold.ttf"),
     "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
 )
@@ -362,32 +363,64 @@ def parse_markdown_table(path: Path):
 
 
 def wrap_cell(value: str, width_px: int, font_obj):
-    approx = max(8, int(width_px / (font_obj.size * 0.56)))
-    parts = [value]
-    if " [" in value and value.endswith("]"):
-        mediana, intervalo = value.split(" [", 1)
-        intervalo = "[" + intervalo
-        if len(intervalo) > approx and "-" in intervalo:
-            q1, q3 = intervalo.split("-", 1)
-            parts = [mediana, q1 + "-", q3]
-        else:
-            parts = [mediana, intervalo]
-    lines = []
-    for part in parts:
-        is_url = part.startswith(("http://", "https://"))
-        lines.extend(
-            textwrap.wrap(
-                part,
-                width=approx,
-                break_long_words=is_url,
-                break_on_hyphens=is_url,
-            )
-            or [""]
-        )
-    return lines
+    def split_token(token: str) -> list[str]:
+        pieces: list[str] = []
+        current = ""
+        for character in token:
+            candidate = current + character
+            if current and font_obj.getlength(candidate) > width_px:
+                pieces.append(current)
+                current = character
+            else:
+                current = candidate
+        if current:
+            pieces.append(current)
+        return pieces or [""]
+
+    lines: list[str] = []
+    for paragraph in value.split("\n"):
+        current = ""
+        for word in paragraph.split():
+            candidate = word if not current else f"{current} {word}"
+            if font_obj.getlength(candidate) <= width_px:
+                current = candidate
+                continue
+            if current:
+                lines.append(current)
+                current = ""
+            if font_obj.getlength(word) <= width_px:
+                current = word
+                continue
+            if word.startswith(("http://", "https://")):
+                pieces = split_token(word)
+                lines.extend(pieces[:-1])
+                current = pieces[-1]
+            else:
+                current = word
+        lines.append(current)
+    return lines or [""]
 
 
-def render_table(path: Path, output: Path, rows_slice: slice, widths: list[float], font_size: int = 27, compact: bool = False):
+def assert_tokens_fit(values: list[list[str]], col_widths: list[int], font_obj) -> None:
+    for row in values:
+        for index, value in enumerate(row):
+            for paragraph in value.split("\n"):
+                for word in paragraph.split():
+                    if word.startswith(("http://", "https://")):
+                        continue
+                    if font_obj.getlength(word) > col_widths[index] - 18:
+                        raise ValueError(f"Conteúdo não cabe sem fragmentação: {word}")
+
+
+def render_table(
+    path: Path,
+    output: Path,
+    rows_slice: slice,
+    widths: list[float],
+    font_size: int = 27,
+    header_font_size: int | None = None,
+    compact: bool = False,
+):
     header, all_rows = parse_markdown_table(path)
     rows = all_rows[rows_slice]
     if compact:
@@ -413,20 +446,22 @@ def render_table(path: Path, output: Path, rows_slice: slice, widths: list[float
     col_widths = [int(usable_w * w / sum(widths)) for w in widths]
     col_widths[-1] += usable_w - sum(col_widths)
     f = font(font_size)
-    fb = font(font_size, True)
+    fb = font(header_font_size or font_size, True)
+    assert_tokens_fit(rows, col_widths, f)
+    assert_tokens_fit([header], col_widths, fb)
     prepared = []
     for row in rows:
         wrapped = [wrap_cell(value, col_widths[i] - 18, f) for i, value in enumerate(row)]
         if compact:
-            row_h = max(58, 8 + max(len(lines) for lines in wrapped) * font_size)
+            row_h = max(58, 8 + max(len(lines) for lines in wrapped) * f.size)
         else:
-            row_h = max(70, 18 + max(len(lines) for lines in wrapped) * (font_size + 7))
+            row_h = max(70, 18 + max(len(lines) for lines in wrapped) * (f.size + 7))
         prepared.append((wrapped, row_h))
     header_lines = [wrap_cell(value, col_widths[i] - 18, fb) for i, value in enumerate(header)]
     if compact:
-        header_h = max(60, 8 + max(len(lines) for lines in header_lines) * font_size)
+        header_h = max(60, 8 + max(len(lines) for lines in header_lines) * fb.size)
     else:
-        header_h = max(72, 18 + max(len(lines) for lines in header_lines) * (font_size + 7))
+        header_h = max(72, 18 + max(len(lines) for lines in header_lines) * (fb.size + 7))
     canvas_h = header_h + sum(h for _, h in prepared) + 4
     image = Image.new("RGB", (canvas_w, canvas_h), "white")
     draw = ImageDraw.Draw(image)
@@ -436,9 +471,9 @@ def render_table(path: Path, output: Path, rows_slice: slice, widths: list[float
         draw.rectangle((x, 0, x + col_widths[i], header_h), outline="#6f7f91", width=2)
         lines = header_lines[i]
         text_y = 4 if compact else 9
-        for line in lines[:2]:
+        for line in lines:
             draw.text((x + 8, text_y), line, font=fb, fill="#1f2933")
-            text_y += font_size if compact else font_size + 4
+            text_y += fb.size if compact else fb.size + 4
         x += col_widths[i]
     y = header_h
     for row_i, (wrapped, row_h) in enumerate(prepared):
@@ -449,7 +484,7 @@ def render_table(path: Path, output: Path, rows_slice: slice, widths: list[float
             text_y = y + (4 if compact else 8)
             for line in lines:
                 draw.text((x + 8, text_y), line, font=f, fill="#202124")
-                text_y += font_size if compact else font_size + 5
+                text_y += f.size if compact else f.size + 5
             x += col_widths[col_i]
         y += row_h
     image.save(output, dpi=(300, 300))
@@ -460,12 +495,12 @@ def render_tables():
     table_2 = FIG_DIR / "Tabela_2_Categorias_Lighthouse.md"
     table_3 = FIG_DIR / "Tabela_3_Metricas_Lighthouse.md"
     table_4 = FIG_DIR / "Tabela_4_Agentic_Browsing.md"
-    render_table(table_1, FIG_DIR / "Tabela_1_URLs_Auditadas.png", slice(None), [1.15, 0.55, 4.3], font_size=46)
-    render_table(table_2, FIG_DIR / "Tabela_2A_Categorias_Iniciais.png", slice(0, 14), [0.55, 0.76, 0.78, 0.92, 0.98, 0.7], font_size=46, compact=True)
-    render_table(table_2, FIG_DIR / "Tabela_2B_Categorias_Internas.png", slice(14, 28), [0.55, 0.76, 0.78, 0.92, 0.98, 0.7], font_size=46, compact=True)
-    render_table(table_3, FIG_DIR / "Tabela_3A_Metricas_Iniciais.png", slice(0, 14), [0.68, 0.78, 0.82, 0.82, 1.0, 0.7, 0.76], font_size=46, compact=True)
-    render_table(table_3, FIG_DIR / "Tabela_3B_Metricas_Internas.png", slice(14, 28), [0.68, 0.78, 0.82, 0.82, 1.0, 0.7, 0.76], font_size=46, compact=True)
-    render_table(table_4, FIG_DIR / "Tabela_4_Agentic_Browsing.png", slice(None), [0.92, 0.9, 0.9, 0.9, 0.9, 0.75, 0.65], font_size=32)
+    render_table(table_1, FIG_DIR / "Tabela_1_URLs_Auditadas.png", slice(None), [1.15, 0.55, 4.3], font_size=38, header_font_size=42)
+    render_table(table_2, FIG_DIR / "Tabela_2A_Categorias_Iniciais.png", slice(0, 14), [0.55, 0.76, 0.78, 0.92, 0.98, 0.7], font_size=42, header_font_size=36, compact=True)
+    render_table(table_2, FIG_DIR / "Tabela_2B_Categorias_Internas.png", slice(14, 28), [0.55, 0.76, 0.78, 0.92, 0.98, 0.7], font_size=42, header_font_size=36, compact=True)
+    render_table(table_3, FIG_DIR / "Tabela_3A_Metricas_Iniciais.png", slice(0, 14), [0.68, 0.78, 0.82, 0.82, 1.0, 0.7, 0.76], font_size=31, header_font_size=36, compact=True)
+    render_table(table_3, FIG_DIR / "Tabela_3B_Metricas_Internas.png", slice(14, 28), [0.68, 0.78, 0.82, 0.82, 1.0, 0.7, 0.76], font_size=31, header_font_size=36, compact=True)
+    render_table(table_4, FIG_DIR / "Tabela_4_Agentic_Browsing.png", slice(None), [0.92, 0.9, 0.9, 0.9, 0.9, 0.75, 0.65], font_size=30, header_font_size=25)
 
 
 def main():
