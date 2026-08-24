@@ -1,5 +1,8 @@
 # Evidências da comparação técnica Lighthouse
 
+[![Validar evidências](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/actions/workflows/validar-evidencias.yml/badge.svg)](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/actions/workflows/validar-evidencias.yml)
+[![Release v1.0.0](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/tag/v1.0.0)
+
 Este repositório reúne os materiais de pesquisa associados ao trabalho **Arquitetura de conteúdo orientada por dados em veículo independente: IA generativa e comparação técnica**, de Alexandre Martins Vaz dos Santos, no MBA em Gestão e Transformação Digital da Escola de Comunicações e Artes da Universidade de São Paulo.
 
 O conjunto documenta uma comparação técnica transversal entre o Nintendista News e seis veículos brasileiros do mesmo nicho. Foram auditadas a página inicial e uma notícia interna de cada veículo, em perfis mobile e desktop, com cinco repetições por combinação. O desenho totalizou `7 × 2 × 2 × 5 = 140` auditorias válidas no Google Lighthouse 13.4.1.
@@ -47,6 +50,8 @@ A automação do repositório baixa a release, confere a quantidade de arquivos,
 Os JSON foram preservados sem alteração. Antes da publicação, o conjunto foi verificado contra caminhos locais, endereços pessoais, cabeçalhos de autenticação, chaves privadas e formatos conhecidos de credenciais. Os relatórios registram recursos e metadados fornecidos publicamente pelos sites auditados, inclusive integrações e publicidade de terceiros.
 
 Nenhum código-fonte do Nintendista News, conversa, documento institucional, monografia, relatório HTML, formulário, artefato exploratório de IA ou credencial integra este repositório.
+
+Relatos de segurança devem seguir a [política de segurança](SECURITY.md), que orienta o uso do canal privado do GitHub. A automação opera com permissão somente de leitura, dependências monitoradas e ações fixadas por identificadores imutáveis.
 
 ## Direitos
 
