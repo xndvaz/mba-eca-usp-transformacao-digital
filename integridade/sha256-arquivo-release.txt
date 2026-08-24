@@ -1,1 +1,1 @@
-e3ae8e72ae13be4d74a1686db15563a5f88da7fdea404b4e126c397ec89b6493  lighthouse-json-140-v1.0.0.tar.gz
+ad1ed0f835a7371720160bcb76deb501c65da4f561a9196552fead8c8465609a  lighthouse-json-140-v1.0.0.tar.gz

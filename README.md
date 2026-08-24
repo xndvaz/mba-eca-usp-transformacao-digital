@@ -13,7 +13,7 @@ O conjunto documenta uma comparação técnica transversal entre o Nintendista N
 - `CITATION.cff`: metadados para citação;
 - `licencas/`: termos aplicáveis ao código, aos textos e aos dados derivados.
 
-Os 140 relatórios JSON originais estão no arquivo `lighthouse-json-140-v1.0.0.tar.gz` da [release v1.0.0](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/tag/v1.0.0). O hash SHA-256 do arquivo consta em `integridade/sha256-arquivo-release.txt`. Os relatórios HTML e os demais registros internos permanecem sob guarda do autor.
+Os 140 relatórios JSON originais estão no arquivo `lighthouse-json-140-v1.0.0.tar.gz` da [release v1.0.0](https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/tag/v1.0.0). O hash SHA-256 do arquivo consta em `integridade/sha256-arquivo-release.txt`, e a conferência do pacote está documentada em `integridade/registro-arquivo-release-v1.0.0.md`. Os relatórios HTML e os demais registros internos permanecem sob guarda do autor.
 
 ## Delineamento e seleção
 
