@@ -18,6 +18,8 @@ jobs:
           python-version: "3.12"
       - name: Instalar dependência dos geradores visuais
         run: python3 -m pip install -r requirements.txt
+      - name: Testar tolerância da comparação visual
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Baixar os 140 relatórios da release
         run: curl -fL -o lighthouse-json-140-v1.0.0.tar.gz "https://github.com/xndvaz/mba-eca-usp-transformacao-digital/releases/download/v1.0.0/lighthouse-json-140-v1.0.0.tar.gz"
       - name: Conferir o hash do arquivo
@@ -34,5 +36,11 @@ jobs:
           python3 scripts/gerar-resumo-redacao.py
       - name: Comparar artefatos textuais regenerados
         run: git diff --exit-code -- dados/resumo-para-redacao.md dados/tabela-performance.csv figuras-geradas/*.md figuras-geradas/*.svg
+      - name: Guardar imagens regeneradas para auditoria
+        uses: actions/upload-artifact@v4
+        with:
+          name: figuras-regeneradas-${{ github.run_id }}-${{ github.run_attempt }}
+          path: figuras-geradas/*.png
+          retention-days: 1
       - name: Comparar conteúdo visual das imagens regeneradas
         run: python3 scripts/validar-figuras.py --expected /tmp/figuras-publicadas --actual figuras-geradas

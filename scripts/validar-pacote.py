@@ -79,6 +79,12 @@ def validate_raw(raw_dir: Path) -> None:
     }
     if len(expected_hashes) != EXPECTED_REPORTS:
         fail("o manifesto de integridade não contém 140 entradas distintas")
+    compact_hashes = {
+        row["arquivo"]: row["sha256"]
+        for row in rows(ROOT / "integridade" / "sha256-relatorios-json.csv")
+    }
+    if compact_hashes != expected_hashes:
+        fail("o manifesto compacto de hashes diverge do manifesto de integridade")
 
     for report in reports:
         content = report.read_bytes()
@@ -125,6 +131,10 @@ def rebuild_and_compare(raw_dir: Path) -> None:
             ROOT / "integridade" / "integridade-relatorios.csv"
         ).read_bytes():
             fail("manifesto de integridade regenerado diverge do publicado")
+        if (out / "sha256-relatorios-json.csv").read_bytes() != (
+            ROOT / "integridade" / "sha256-relatorios-json.csv"
+        ).read_bytes():
+            fail("manifesto compacto de hashes regenerado diverge do publicado")
 
 
 def main() -> None:
@@ -142,6 +152,8 @@ def main() -> None:
     integrity = rows(ROOT / "integridade" / "integridade-relatorios.csv")
     if len(integrity) != EXPECTED_REPORTS or any(row["integridade"] != "ok" for row in integrity):
         fail("o manifesto de integridade está incompleto ou contém divergência")
+    if len(rows(ROOT / "integridade" / "sha256-relatorios-json.csv")) != EXPECTED_REPORTS:
+        fail("o manifesto compacto de hashes não contém 140 entradas")
 
     validate_raw(args.raw_dir.resolve())
     if args.rebuild:

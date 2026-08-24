@@ -85,7 +85,7 @@ def main() -> None:
         table_rows.append(table_row)
     with TABLE_OUTPUT.open("w", encoding="utf-8", newline="") as handle:
         columns = ["Veículo", "Inicial mobile", "Inicial desktop", "Interna mobile", "Interna desktop"]
-        writer = csv.DictWriter(handle, fieldnames=columns)
+        writer = csv.DictWriter(handle, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         writer.writerows(table_rows)
 
